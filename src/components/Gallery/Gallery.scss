@@ -16,9 +16,30 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 28px;
+        row-gap: 14px;
+
+        &_element {
+            &_large {
+                width: 500px;
+                height: 500px;
+
+            }
+
+            &_small {
+                width: 366px;
+                height: 366px;
+            }
+        }
 
         img {
-            width: 200px;
+            border-radius: 28px;
         }
+
+        &_delimeter {
+            width: 100%;
+        }
+
     }
 }
