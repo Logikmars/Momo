@@ -1,0 +1,9 @@
+.Nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    @media(max-width: 600px){
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,82 @@
+.AboutSliderItem{
+    width: calc(100% - 75% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(max-width: 1400px){
+        min-width: 300px;
+    }
+    @media(max-width: 400px){
+        min-width: 270px;
+    }
+    &__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        &_wrapper{
+            border-radius: 28px;
+            background-color: #000;
+            width: 100%;
+            padding: 5px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                width: 200px;
+            }
+        }
+    }
+    &__title{
+        bottom: 30px;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between !important;
+        background-color: #0E161A;
+        border-radius: 50px;
+        border: 1px solid #1B2A32;
+        min-height: 85px;
+        &_index{
+            background-color: #EB844C;
+            border-radius: 50px;
+            border: 1px solid #FCA86D;
+            min-height: 75px;
+            min-width: 75px;
+            max-height: 75px;
+            max-width: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Modak";
+            font-size: 71px;
+            left: 5px;
+            @media(max-width: 1400px){
+                font-size: 40px;
+            }
+        }
+        &_title{
+            font-family: "Modak";
+            font-size: 42px;
+            width: 100% !important;
+            display: flex;
+            justify-content: end !important;
+            align-items: center;
+            right: 5px;
+            @media(max-width: 1400px){
+                font-size: 30px;
+            }
+        }
+    }
+    &__description{
+        width: 100%;
+        font-family: "SF";
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+    }
+}

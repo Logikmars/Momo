@@ -1,0 +1,15 @@
+.Gallery{
+    width: 100% !important;
+    display: flex;
+    justify-content: center !important;
+    background-color: #000;
+    flex-wrap: wrap;
+    gap: 100px;
+    &__nav{
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__items{
+        width: 100%;
+    }
+}
