@@ -36,6 +36,7 @@
         img {
             cursor: pointer;
             transition: transform 300ms;
+            max-width: 50px;
 
             &:hover {
                 transform: scale(1.1);

@@ -18,30 +18,47 @@
 
         &_text {
             width: 100%;
-            font-size: 160px;
-            font-family: "Modak";
-            color: #EB844C;
-            line-height: 200px;
+            max-width: 1620px;
+            margin: 0 auto;
 
-            @media(max-width: 1600px) {
-                font-size: 120px;
-                line-height: 130px;
+            span {
+                font-size: 160px;
+                font-family: "Modak";
+                color: #EB844C;
+                line-height: 200px;
             }
 
-            @media(max-width: 1200px) {
-                font-size: 100px;
-                line-height: 100px;
+            &_img {
+                display: inline-flex !important;
+                top: -30px;
+                left: -30px;
+
+
+                img {
+                    width: 250px;
+                    max-height: 180px;
+                }
             }
 
-            @media(max-width: 900px) {
-                font-size: 60px;
-                line-height: 60px;
-            }
+            // @media(max-width: 1600px) {
+            //     font-size: 120px;
+            //     line-height: 130px;
+            // }
 
-            @media(max-width: 600px) {
-                font-size: 30px;
-                line-height: 30px;
-            }
+            // @media(max-width: 1200px) {
+            //     font-size: 100px;
+            //     line-height: 100px;
+            // }
+
+            // @media(max-width: 900px) {
+            //     font-size: 60px;
+            //     line-height: 60px;
+            // }
+
+            // @media(max-width: 600px) {
+            //     font-size: 30px;
+            //     line-height: 30px;
+            // }
         }
     }
 
