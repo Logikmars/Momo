@@ -1,7 +1,11 @@
 .About {
     width: 100%;
-    background: linear-gradient(to bottom, rgba(251, 166, 108, 0.8) 0%, rgba(184, 104, 81, 0.8) 48%, rgba(6, 67, 89, 0.8) 100%),
-        url('/img/orangeBg.webp');
+    background: 
+    linear-gradient(to bottom, rgba(251, 166, 108, 0.8) 0%, rgba(184, 104, 81, 0.8) 48%, rgba(6, 67, 89, 0.8) 100%),
+    url('/img/dots.png'),
+    url('/img/noise.webp');
+    background-position: center;
+    background-repeat: repeat;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
@@ -9,7 +13,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    background-size: cover;
     padding-bottom: 20px;
 
     &__paper {
