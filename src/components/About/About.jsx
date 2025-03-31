@@ -8,6 +8,21 @@ export default () => {
             img: '/img/bear1.webp',
             title: 'Buy $MOMO',
             description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+        },
+        {
+            img: '/img/bear2.webp',
+            title: 'Buy $MOMO',
+            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+        },
+        {
+            img: '/img/bear3.webp',
+            title: 'Buy $MOMO',
+            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+        },
+        {
+            img: '/img/bear4.webp',
+            title: 'Buy $MOMO',
+            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
         }
     ];
 
