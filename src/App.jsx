@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <Partners />
       <About />
-      {/* <Gallery /> */}
+      <Gallery />
     </>
   )
 }
