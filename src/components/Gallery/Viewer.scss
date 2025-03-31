@@ -1,0 +1,83 @@
+.Viewer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    background-color: rgba($color: #000000, $alpha: .5);
+    &_cross_wrapper{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        height: 100%;
+    }
+    &_cross{
+        background-color: #DB665C;
+        border-radius: 50px;
+        padding: 5px 20px;
+        font-family: "Modak";
+        font-size: 30px;
+        position: relative;
+        top: 50px;
+        cursor: pointer;
+        z-index: 3;
+        left: 50px;
+    }
+    &_scale{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-between;
+        &_download{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FCA86D;
+            border-radius: 50px;
+            border: 1px solid #FCA86D;
+            font-family: "Modak";
+            font-size: 24px;
+            padding: 10px;
+            transition: color 300ms;
+            cursor: pointer;
+            position: relative;
+            top: 50px;
+            right: 50px;
+            &:hover{
+                color: #090909;
+            }
+        }
+        &_wrapper{
+            position: relative;
+            bottom: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            right: 50px;
+        }
+        &_btn{
+            width: 100%;
+            height: 49px;
+            background-color: #287E9F;
+            border-radius: 50px;
+            border: 1px solid #52BBE3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Modak";
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    &_content{
+       img{
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, .7);
+       }
+    }
+}

@@ -27,6 +27,7 @@
         img{
             cursor: pointer;
             transition: transform 300ms;
+            width: 35px;
             &:hover{
                 transform: scale(1.1);
             }
