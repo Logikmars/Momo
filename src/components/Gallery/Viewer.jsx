@@ -22,7 +22,7 @@ export default ({ frame, close }) => {
         <div className='Viewer' onClick={close}>
             <div className='Viewer_cross_wrapper' >
                 <div className='Viewer_cross'>
-                    X
+                    <img src="/img/close.svg" alt="" />
                 </div>
             </div>
             <div className='Viewer_content'>
@@ -47,13 +47,13 @@ export default ({ frame, close }) => {
                         e.stopPropagation()
                         setscale(prev => Math.min(prev + .5, 3))
                     }}>
-                        +
+                        <img src="/img/plus.svg" alt="" />
                     </div>
                     <div className='Viewer_scale_btn' onClick={(e) => {
                         e.stopPropagation()
                         setscale(prev => Math.max(prev - .5, .5))
                     }}>
-                        -
+                        <img src="/img/minus.svg" alt="" />
                     </div>
                 </div>
             </div>
