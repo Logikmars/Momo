@@ -45,7 +45,7 @@ export default ({ setshowContent, showContent }) => {
                         transition: `opacity 500ms`,
                     }}
                     onLoadedMetadata={(e) => {
-                        e.currentTarget.playbackRate = 10;
+                        // e.currentTarget.playbackRate = 10;
                     }}
                 />
             </div>
