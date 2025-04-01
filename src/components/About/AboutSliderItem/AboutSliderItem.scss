@@ -7,9 +7,13 @@
     @media(max-width: 1400px){
         min-width: 300px;
     }
-    @media(max-width: 400px){
-        min-width: 270px;
+    @media(max-width: 800px){
+        width: calc(100% - 33% - 20px);
     }
+    // @media(max-width: 400px){
+    //     min-width: 270px;
+    // }
+    
     &__img{
         width: 100%;
         display: flex;
@@ -94,6 +98,9 @@
 
 .img2{
     max-width: 400px !important;
+    @media(max-width: 420px){
+        max-width: 300px !important;
+    }
 }
 .img3{
     max-width: 250px;
