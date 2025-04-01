@@ -1,27 +1,34 @@
-.AboutSliderItem{
-    width: calc(100% - 75% - 40px);
+.AboutSliderItem {
+    min-width: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    @media(max-width: 1400px){
-        min-width: 300px;
+    // min-height: 200px;
+
+    @media(max-width: 420px) {
+        min-width: 90vw;
     }
-    @media(max-width: 800px){
-        width: calc(100% - 33% - 20px);
+
+    &_wrapper {
+        transition: transform 500ms ease-in-out, opacity 500ms ease-in-out, filter 500ms ease-in-out;
+
     }
+
+
+
     // @media(max-width: 400px){
     //     min-width: 270px;
     // }
-    
-    &__img{
+
+    &__img {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        
-        &_wrapper{
+
+        &_wrapper {
             border-radius: 28px;
             background-color: #000;
             min-width: 100%;
@@ -37,7 +44,8 @@
             // }
         }
     }
-    &__title{
+
+    &__title {
         bottom: 30px;
         width: 100% !important;
         display: flex;
@@ -48,7 +56,8 @@
         border: 1px solid #1B2A32;
         min-height: 85px;
         padding: 3px;
-        &_index{
+
+        &_index {
             background-color: #EB844C;
             border-radius: 50px;
             border: 1px solid #FCA86D;
@@ -67,7 +76,8 @@
             //     font-size: 40px;
             // }
         }
-        &_title{
+
+        &_title {
             font-family: "Modak";
             font-size: 52px;
             width: 100% !important;
@@ -75,15 +85,18 @@
             justify-content: center;
             align-items: center;
             right: 5px;
-            @media(max-width: 1600px){
+
+            @media(max-width: 1600px) {
                 font-size: 40px;
             }
-            @media(max-width: 1400px){
+
+            @media(max-width: 1400px) {
                 font-size: 30px;
             }
         }
     }
-    &__description{
+
+    &__description {
         width: 100%;
         font-family: "SF";
         font-size: 26px;
@@ -92,19 +105,22 @@
     }
 }
 
-.img1{
+.img1 {
     width: 250px;
 }
 
-.img2{
+.img2 {
     max-width: 400px !important;
-    @media(max-width: 420px){
+
+    @media(max-width: 420px) {
         max-width: 300px !important;
     }
 }
-.img3{
+
+.img3 {
     max-width: 250px;
 }
-.img4{
+
+.img4 {
     max-width: 300px;
 }

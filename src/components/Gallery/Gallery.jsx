@@ -8,9 +8,9 @@ export default () => {
 
     return (
         <>
-            <div className='Gallery'>
+            <div className='Gallery' id='GALLERY'>
                 <div className='Gallery__nav'>
-                    <Nav theactiveTab={3}/>
+                    <Nav theactiveTab={3} />
                 </div>
                 <div className='Gallery__items'>
                     {Array(14)

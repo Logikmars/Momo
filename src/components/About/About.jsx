@@ -1,6 +1,9 @@
+import { useRef, useState } from 'react';
 import Nav from '../Nav/Nav';
 import './About.scss';
 import AboutSliderItem from './AboutSliderItem/AboutSliderItem';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 export default () => {
     const listItem = [
@@ -26,24 +29,51 @@ export default () => {
         }
     ];
 
+    const [currentSlide, setcurrentSlide] = useState(1);
+
+    const scope = useRef(null);
+    useGSAP(() => {
+        gsap.to('.About__slider', {
+            y: '0px',
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.About__slider_wrapper',
+                scrub: 0,
+                // markers: true,
+                pin: '.About__slider_wrapper',
+                pinSpacing: false,
+                start: '50vh 0%',
+                end: 'bottom 100%',
+                onUpdate: self => {
+                    const percent = Math.round(self.progress * 100);
+                    // console.log('Progress:', percent + '%');
+                    setcurrentSlide(Math.max(Math.ceil(percent / (100 / 4)), 1))
+                }
+            }
+        })
+    }, { scope: scope })
+
     return (
-        <div className='About'>
+        <div className='About' id='HOW_TO_BUY' ref={scope}>
             <div className='About__paper'>
                 <img src="/img/paper.webp" alt="" />
             </div>
             <div className='About__nav'>
-                <Nav secactiveTab={2}/>
+                <Nav secactiveTab={2} />
             </div>
-            <div className='About__slider'>
-                {listItem.map((el, index) => (
-                    <AboutSliderItem 
-                        key={index} 
-                        index={index + 1} 
-                        img={el.img} 
-                        title={el.title} 
-                        description={el.description} 
-                    />
-                ))}
+            <div className='About__slider_wrapper'>
+                <div className='About__slider'>
+                    {listItem.map((el, index) => (
+                        <AboutSliderItem
+                            key={index}
+                            currentSlide={currentSlide}
+                            index={index + 1}
+                            img={el.img}
+                            title={el.title}
+                            description={el.description}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );
