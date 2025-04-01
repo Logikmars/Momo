@@ -25,7 +25,7 @@ export default ({ frame, close }) => {
                     <img src="/img/close.svg" alt="" />
                 </div>
             </div>
-            <div className='Viewer_content'>
+            <div className='Viewer_content free_img'>
                 <img src={`/img/gallery/${frameLocal}.webp`} alt="" style={{
                     transform: `scale(${scale})`,
                     transition: 'transform 300ms',

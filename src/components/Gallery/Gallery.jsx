@@ -10,7 +10,7 @@ export default () => {
         <>
             <div className='Gallery'>
                 <div className='Gallery__nav'>
-                    <Nav />
+                    <Nav theactiveTab={3}/>
                 </div>
                 <div className='Gallery__items'>
                     {Array(14)

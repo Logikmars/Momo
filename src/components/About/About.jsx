@@ -32,7 +32,7 @@ export default () => {
                 <img src="/img/paper.webp" alt="" />
             </div>
             <div className='About__nav'>
-                <Nav />
+                <Nav secactiveTab={2}/>
             </div>
             <div className='About__slider'>
                 {listItem.map((el, index) => (
