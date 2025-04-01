@@ -3,9 +3,9 @@ export default ({ index, img, title, description, currentSlide }) => {
     return (
         <div className='AboutSliderItem_wrapper free_img' style={{
             // transition: `transform 500ms`,
-            transform: `translate(${(currentSlide - index) * 1200 * -1}px,0px) `,
-            opacity: (currentSlide === index) ? 1 : .5,
-            filter: `blur(${(currentSlide === index) ? 0 : 10}px)`,
+            transform: `translate(${window.innerWidth > 700 ? ((currentSlide - index) * 1200 * -1) : 0}px,0px) `,
+            opacity: window.innerWidth > 700 ? ((currentSlide === index) ? 1 : .5) : 1,
+            filter: window.innerWidth > 700 ? `blur(${(currentSlide === index) ? 0 : 10}px)` : 'blur(0px)',
         }}>
             <div className='AboutSliderItem '>
                 <div className='AboutSliderItem__img'>

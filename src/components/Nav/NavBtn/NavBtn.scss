@@ -17,6 +17,15 @@
     transition: background-color 500ms, border 500ms;
     pointer-events: all;
 
+    @media(max-width: 1070px) {
+        font-size: 17px;
+        padding: 10px 28px;
+    }
+
+    @media(max-width: 700px) {
+        padding: 0px 8px;
+    }
+
     &_text {
         text-align: center;
         transition: color 200ms 300ms;
@@ -26,6 +35,10 @@
         font-size: 24px;
         position: relative;
         z-index: 10;
+
+        @media(max-width: 700px) {
+            font-size: 16px !important;
+        }
     }
 
     &_anim {
@@ -98,15 +111,6 @@
         }
     }
 
-    @media(max-width: 1070px) {
-        font-size: 17px;
-        padding: 10px 28px;
-    }
-
-    @media(max-width: 620px) {
-        font-size: 10px;
-        padding: 10px 10px;
-    }
 
     &_1 {
         background-color: #EB844C;

@@ -61,7 +61,7 @@ export default ({ setactiveBlock }) => {
                                     !!dogsInText[index] && <div className='free_img Hero__title_text_img'>
                                         <img src={`/img/dogs/hero_text_dog_${dogsInText[index]}.webp`} alt=""
                                             style={{
-                                                transition: `opacity 200ms ${(index * 50) + 1000}ms`,
+                                                transition: `opacity 200ms ${(index * 30) + 1000}ms`,
                                                 // opacity: showContent ? 1 : 0
                                                 opacity: showText ? 1 : 0
                                             }} />
@@ -69,7 +69,7 @@ export default ({ setactiveBlock }) => {
                                 }
                                 <span
                                     style={{
-                                        transition: `opacity 200ms ${index * 50}ms`,
+                                        transition: `opacity 200ms ${index * 30}ms`,
                                         opacity: showText ? 1 : 0
                                     }}
                                 >{letter}</span>

@@ -26,8 +26,12 @@
         // overflow: hidden;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         height: 100vh;
+
+        @media(max-aspect-ratio: 1/1) {
+            align-items: center;
+        }
 
         video {
             object-fit: cover;
@@ -63,7 +67,7 @@
                 }
 
                 @media(max-width: 768px) {
-                    font-size: 50px;
+                    font-size: 44px;
                     line-height: 60px;
                 }
             }

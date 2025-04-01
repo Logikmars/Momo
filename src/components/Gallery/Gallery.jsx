@@ -42,7 +42,7 @@ export default ({ setactiveBlock }) => {
                             const imgSize = (index) % 7 > 2 ? 'small' : 'large'
 
                             return <>
-                                <img src={`/img/gallery/${index + 1}.webp`} className={`Gallery__items_element_${imgSize}`} alt="" onClick={() => { setviewingFrame(index + 1) }} />
+                                <img src={`/img/gallery/${index + 1}.webp`} className={`Gallery__items_element Gallery__items_element_${imgSize}`} alt="" onClick={() => { setviewingFrame(index + 1) }} />
                                 {(index + 1) % 7 === 3 && <div className='Gallery__items_delimeter' />}
                                 {(index + 1) % 7 === 0 && <div className='Gallery__items_delimeter' />}
                             </>

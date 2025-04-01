@@ -32,15 +32,22 @@ function App() {
     }, 1000);
   }, [])
 
+  useEffect(() => {
+    document.body.style.overflow = showContent ? '' : 'hidden';
+    document.body.style.position = showContent ? '' : 'fixed';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showContent]);
+
 
   return (
     <div className='App' style={{
       width: `100%`,
       overflow: 'hidden',
-      maxHeight: showContent ? 'none' : '100vh'
+      maxHeight: showContent ? 'none' : '100dvh'
     }}>
       <div className='App_noise'>
-
       </div>
       <div className='Header__nav' style={{
         opacity: showContent ? 1 : 0

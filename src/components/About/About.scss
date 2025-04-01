@@ -36,8 +36,8 @@
             width: 50vw;
             min-width: 350px;
 
-            @media(max-width: 400px) {
-                min-width: 250px;
+            @media(max-width: 700px) {
+                width: 90%;
             }
         }
     }
@@ -52,19 +52,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        // overflow: hidden;
-        margin-top: 50px;
+        height: 100vh;
 
+        // overflow: hidden;
+        // padding-top: 200px;
+        @media(max-width: 700px) {
+            flex-wrap: wrap;
+        }
 
         &_wrapper {
-            // max-width: 1400px;
             margin: 0 auto;
-            // margin-top: 32px;
             min-height: 300vh;
 
-            @media(max-width: 800px) {
-                min-height: 500dvh;
+            @media(max-width: 700px) {
+                min-height: auto;
+                min-height: 2400px;
+                margin-top: 60px;
+
+                // max-height: 3000px;
             }
         }
     }
