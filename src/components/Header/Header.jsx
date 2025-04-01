@@ -8,7 +8,7 @@ export default () => {
                     <img src="/img/logo.svg" alt="" />
                 </div>
                 <div className='Header__nav'>
-                    <Nav />
+                    <Nav activeTab={1}/>
                 </div>
                 <div className='Header__social'>
                     <img src="/img/x.webp" alt="" />

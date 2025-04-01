@@ -5,7 +5,10 @@
     background-color: #000;
     flex-wrap: wrap;
     gap: 100px;
-    padding-bottom: 100vh;
+    padding-bottom: 100px;
+    @media(max-width: 600px){
+        padding-bottom: 20px;
+    }
 
     &__nav {
         width: 100%;
@@ -19,22 +22,55 @@
         justify-content: center;
         column-gap: 28px;
         row-gap: 14px;
+        @media(max-width: 900px){
+            column-gap: 16px;
+            row-gap: 8px;
+        }
+        @media(max-width: 600px){
+            column-gap: 10px;
+            row-gap: 5px;
+        }
 
         &_element {
             &_large {
                 width: 500px;
                 height: 500px;
-
+                @media(max-width: 1600px){
+                    width: calc(33vw - 50px);
+                    height: 33vw;
+                }
+                @media(max-width: 900px){
+                    width: calc(33vw - 16px);
+                }
+                @media(max-width: 600px){
+                    width: calc(33vw - 10px);
+                }
             }
 
             &_small {
                 width: 366px;
                 height: 366px;
+                @media(max-width: 1600px){
+                    width: calc(25vw - 50px);
+                    height: 25vw;
+                }
+                @media(max-width: 900px){
+                    width: calc(25vw - 16px);
+                }
+                @media(max-width: 600px){
+                    width: calc(25vw - 10px);
+                }
             }
         }
 
         img {
             border-radius: 28px;
+            @media(max-width: 800px){
+                border-radius: 15px;
+            }
+            @media(max-width: 500px){
+                border-radius: 7px;
+            }
         }
 
         &_delimeter {
