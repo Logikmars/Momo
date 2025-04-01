@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Hero.scss';
 export default () => {
 
-    const [textShow, settextShow] = useState(true);
+    const [textShow, settextShow] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
