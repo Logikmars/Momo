@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './Hero.scss';
-export default ({ setshowContent }) => {
+export default ({ setshowContent, showContent }) => {
 
     const videoRef = useRef(null);
     const videoRef2 = useRef(null);
@@ -30,23 +30,28 @@ export default ({ setshowContent }) => {
 
     return (
         <div className='Hero' id='#ABOUT'>
-            <div className='Hero_video'>
+            <div className='Hero_video' style={{
+                overflow: 'hidden'
+            }}>
                 <video
                     ref={videoRef}
                     src={`/vid_${isPortrait ? 'vert' : 'hor'}.mp4`}
                     autoPlay
                     muted
                     playsInline
+                    // loop
                     onEnded={handleEnded}
                     style={{
-                        transition: `opacity 500ms`
+                        transition: `opacity 500ms`,
                     }}
                     onLoadedMetadata={(e) => {
-                        // e.currentTarget.playbackRate = 10;
+                        e.currentTarget.playbackRate = 10;
                     }}
                 />
             </div>
-            <div className='Hero_video'>
+            <div className='Hero_video' style={{
+                overflow: showContent ? 'visible' : 'hidden'
+            }}>
                 <video
                     ref={videoRef2}
                     src={`/cycle_${isPortrait ? 'vert' : 'hor'}.mp4`}

@@ -12,9 +12,15 @@ export default ({ showContent }) => {
                 </div>
 
                 <div className='Header__social'>
-                    <img src="/img/x.svg" alt="" />
-                    <img src="/img/tg.svg" alt="" />
-                    <img src="/img/dexs.svg" alt="" />
+                    <a href="#">
+                        <img src="/img/x.png" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="/img/tg.png" alt="" />
+                    </a>
+                    <a href="#">
+                        <img src="/img/dex.png" alt="" />
+                    </a>
                 </div>
             </div>
         </div>

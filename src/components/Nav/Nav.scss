@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     gap: 14px;
+    pointer-events: none;
 
     @media(max-width: 600px) {
         flex-wrap: wrap;

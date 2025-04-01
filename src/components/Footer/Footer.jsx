@@ -21,7 +21,7 @@ export default ({ setactiveBlock }) => {
     }, []);
 
     return (
-        <div className='Footer' id='SOCIAL'>
+        <div className='Footer' id='SOCIALS'>
             <div ref={obs}></div>
             <div className='Footer__links'>
                 <a className='Footer__links_item' href='#'>X / TWITTER</a>

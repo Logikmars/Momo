@@ -6,7 +6,7 @@ export default ({ activeTab, secactiveTab, theactiveTab }) => {
         { text: "ABOUT" },
         { text: "HOW TO BUY" },
         { text: "GALLERY" },
-        { text: "SOCIAL" }
+        { text: "SOCIALS" }
     ];
 
     return (

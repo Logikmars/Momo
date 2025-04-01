@@ -15,6 +15,7 @@
     white-space: nowrap;
     overflow: hidden;
     transition: background-color 500ms, border 500ms;
+    pointer-events: all;
 
     &_text {
         text-align: center;
@@ -37,6 +38,22 @@
             background: #6a6a6a;
             transform: translate(0px, 30px) scale(.5);
             transition: transform 500ms;
+
+            &_1 {
+                background-color: #EB844C;
+            }
+
+            &_2 {
+                background-color: #287E9F;
+            }
+
+            &_3 {
+                background-color: #DB665C;
+            }
+
+            &_4 {
+                background-color: #7459df;
+            }
         }
 
         &_white {
@@ -46,10 +63,28 @@
             background: #fff;
             transform: translate(0px, 30px) scale(.5);
             transition: transform 500ms 200ms;
+
+
+            &_1 {
+                background-color: #EB844C;
+            }
+
+            &_2 {
+                background-color: #287E9F;
+            }
+
+            &_3 {
+                background-color: #DB665C;
+            }
+
+            &_4 {
+                background-color: #7459df;
+            }
         }
     }
 
-    &:hover {
+    &:hover,
+    &_activated {
         .NavBtn_text {
             color: black;
         }

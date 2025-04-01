@@ -75,15 +75,17 @@ export default ({ setactiveBlock }) => {
 
     return (
         <div ref={scope}>
-            <div ref={obs}></div>
-            <div className='About' id='HOW_TO_BUY' >
+            <div className='About' >
                 <div className='About__paper'>
                     <img src="/img/paper.webp" alt="" />
                 </div>
+
                 {/* <div className='About__nav'>
                 <Nav secactiveTab={2} />
             </div> */}
-                <div className='About__slider_wrapper'>
+                <div ref={obs}></div>
+                <div className='About__slider_wrapper' id='HOW_TO_BUY'>
+
                     <div className='About__slider'>
                         {listItem.map((el, index) => (
                             <AboutSliderItem

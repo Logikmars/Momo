@@ -145,3 +145,18 @@ body {
 img {
     user-select: none;
 }
+
+.App {
+    &_noise {
+        position: fixed;
+        z-index: 99999;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url('/img/noise.webp');
+        opacity: .15;
+        pointer-events: none;
+
+    }
+}

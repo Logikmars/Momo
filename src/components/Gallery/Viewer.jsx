@@ -13,7 +13,12 @@ export default ({ frame, close }) => {
 
 
     const handledownload = () => {
-        console.log('load');
+        const link = document.createElement('a');
+        link.href = `/img/gallery/${frameLocal}.webp`;
+        link.download = `${frameLocal}.webp`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     const [scale, setscale] = useState(1);
@@ -22,7 +27,7 @@ export default ({ frame, close }) => {
         <div className='Viewer' onClick={close}>
             <div className='Viewer_cross_wrapper' >
                 <div className='Viewer_cross'>
-                    <img src="/img/close.svg" alt="" />
+                    <img src="/img/close.svg" draggable="none" alt="" />
                 </div>
             </div>
             <div className='Viewer_content free_img'>

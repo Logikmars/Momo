@@ -39,6 +39,9 @@ function App() {
       overflow: 'hidden',
       maxHeight: showContent ? 'none' : '100vh'
     }}>
+      <div className='App_noise'>
+
+      </div>
       <div className='Header__nav' style={{
         opacity: showContent ? 1 : 0
       }}>
