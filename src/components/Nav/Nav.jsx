@@ -3,16 +3,16 @@ import NavBtn from './NavBtn/NavBtn';
 
 export default ({ activeTab, secactiveTab, theactiveTab }) => {
     const btns = [
-        { text: "ABOUT", activeTab: activeTab },
-        { text: "HOW TO BUY", activeTab: secactiveTab },
-        { text: "GALLERY", activeTab: theactiveTab },
+        { text: "ABOUT" },
+        { text: "HOW TO BUY" },
+        { text: "GALLERY" },
         { text: "SOCIAL" }
     ];
 
     return (
         <div className='Nav'>
             {btns.map((btn, index) => (
-                <NavBtn key={index} text={btn.text} activeTab={btn.activeTab} />
+                <NavBtn key={index} index={index} text={btn.text} activeTab={activeTab} />
             ))}
         </div>
     );

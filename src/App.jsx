@@ -11,6 +11,9 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { useEffect, useState } from "react"
+import HeroText from "./components/HeroText/HeroText"
+import Nav from "./components/Nav/Nav"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -18,17 +21,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function App() {
+
+  const [showContent, setshowContent] = useState(false);
+
+  const [activeBlock, setactiveBlock] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setactiveBlock(0)
+    }, 1000);
+  }, [])
+
+
   return (
     <div className='App' style={{
       width: `100%`,
-      overflow: 'hidden'
+      overflow: 'hidden',
+      maxHeight: showContent ? 'none' : '100vh'
     }}>
-      <Header />
-      <Hero />
+      <div className='Header__nav' style={{
+        opacity: showContent ? 1 : 0
+      }}>
+        <Nav activeTab={activeBlock} />
+      </div>
+      <Header showContent={showContent} />
+      <Hero showContent={showContent} setshowContent={setshowContent} />
+      <HeroText setactiveBlock={setactiveBlock} />
       <Partners />
-      <About />
-      <Gallery />
-      <Footer />
+      <About setactiveBlock={setactiveBlock} />
+      <Gallery setactiveBlock={setactiveBlock} />
+      <Footer setactiveBlock={setactiveBlock} />
     </div>
   )
 }

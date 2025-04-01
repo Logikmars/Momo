@@ -1,12 +1,9 @@
 import './NavBtn.scss';
 
-export default ({ text, activeTab }) => {
+export default ({ text, activeTab, index }) => {
     return (
-        <a href={`#${text.replace(' ', '_').replace(' ', '_')}`} className={`NavBtn ${activeTab === 1 ? "NavBtn_1" :
-            activeTab === 2 ? "NavBtn_2" :
-                activeTab === 3 ? "NavBtn_3" :
-                    activeTab === 4 ? "NavBtn_4" : ""
-            }`}>
+        <a href={`#${text.replace(' ', '_').replace(' ', '_')}`}
+            className={`NavBtn ${activeTab === (index + 1) && `NavBtn_${index + 1}`}`}>
             <div className='NavBtn_text'>
                 {text}
             </div>

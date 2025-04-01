@@ -1,17 +1,39 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Nav from '../Nav/Nav';
 import './Gallery.scss';
 import Viewer from './Viewer';
-export default () => {
+export default ({ setactiveBlock }) => {
 
     const [viewingFrame, setviewingFrame] = useState(0);
 
+
+
+
+    const obs = useRef(null)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setactiveBlock(3)
+            },
+            { threshold: 0.1 }
+        );
+
+        if (obs.current) observer.observe(obs.current);
+
+        return () => {
+            if (obs.current) observer.unobserve(obs.current);
+        };
+    }, []);
+
+
     return (
         <>
-            <div className='Gallery' id='GALLERY'>
-                <div className='Gallery__nav'>
+            <div ref={obs}></div>
+            <div className='Gallery' id='GALLERY' >
+                {/* <div className='Gallery__nav'>
                     <Nav theactiveTab={3} />
-                </div>
+                </div> */}
                 <div className='Gallery__items'>
                     {Array(14)
                         .fill(0)

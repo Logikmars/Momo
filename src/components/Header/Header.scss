@@ -8,7 +8,8 @@
         align-items: center;
         gap: 20px;
         padding-top: 20px;
-        @media(max-width: 900px){
+
+        @media(max-width: 900px) {
             flex-wrap: wrap;
         }
     }
@@ -26,12 +27,15 @@
 
     &__nav {
         @media(max-width: 900px) {
-            display: none;
+            // display: none;
+            order: 10;
         }
     }
-    &__nav_mob{
+
+    &__nav_mob {
         display: none;
-        @media(max-width: 900px){
+
+        @media(max-width: 900px) {
             display: flex;
             width: 100%;
             justify-content: center;
@@ -50,6 +54,7 @@
             cursor: pointer;
             transition: transform 300ms;
             max-width: 50px;
+            will-change: transform;
 
             &:hover {
                 transform: scale(1.1);

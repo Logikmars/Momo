@@ -1,10 +1,15 @@
-.Nav{
+.Nav {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 14px;
-    @media(max-width: 600px){
+
+    @media(max-width: 600px) {
         flex-wrap: wrap;
         gap: 5px;
     }
+
+    position: fixed;
+    top: 10px;
+    z-index: 99;
 }
