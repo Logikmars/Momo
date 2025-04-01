@@ -8,6 +8,9 @@
         align-items: center;
         gap: 20px;
         padding-top: 20px;
+        @media(max-width: 900px){
+            flex-wrap: wrap;
+        }
     }
 
     &__logo {
@@ -24,6 +27,15 @@
     &__nav {
         @media(max-width: 900px) {
             display: none;
+        }
+    }
+    &__nav_mob{
+        display: none;
+        @media(max-width: 900px){
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
         }
     }
 

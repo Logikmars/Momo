@@ -11,9 +11,12 @@ export default () => {
                     <Nav activeTab={1} />
                 </div>
                 <div className='Header__social'>
-                    <img src="/img/x.webp" alt="" />
-                    <img src="/img/tg.webp" alt="" />
-                    <img src="/img/dexs.webp" alt="" />
+                    <img src="/img/x.svg" alt="" />
+                    <img src="/img/tg.svg" alt="" />
+                    <img src="/img/dexs.svg" alt="" />
+                </div>
+                <div className='Header__nav_mob'>
+                    <Nav activeTab={1}/>
                 </div>
             </div>
         </div>

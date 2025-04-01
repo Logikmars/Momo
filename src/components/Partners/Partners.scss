@@ -5,7 +5,10 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
+    @media(max-width: 800px){
+        padding-bottom: 100px;
+    }
     &_title {
         width: 100%;
         text-align: center;
