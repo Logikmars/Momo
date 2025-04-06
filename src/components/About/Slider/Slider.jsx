@@ -63,7 +63,6 @@ export default () => {
                             key={index}
                             currentSlide={currentSlide}
                             index={index + 1}
-                            img={el.img}
                             title={el.title}
                             description={el.description}
                         />

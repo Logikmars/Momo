@@ -50,10 +50,6 @@
                 min-width: 300px;
                 align-items: start !important;
 
-                img {
-                    top: -80px;
-                    position: relative;
-                }
             }
 
             // img{
@@ -107,7 +103,7 @@
 
         &_title {
             font-family: "Modak";
-            font-size: 52px;
+            font-size: 50px;
             width: 100% !important;
             display: flex;
             justify-content: center;
@@ -115,10 +111,14 @@
             right: 5px;
 
             @media(max-width: 1600px) {
-                font-size: 40px;
+                font-size: 45px;
             }
 
             @media(max-width: 1400px) {
+                font-size: 40px;
+            }
+
+            @media(max-width: 700px) {
                 font-size: 30px;
             }
 
@@ -128,7 +128,8 @@
 
     &__description {
         width: 100%;
-        font-family: "SF";
+        font-family: "shantel";
+        // font-family: "SF";
         font-size: 26px;
         text-align: center;
         font-weight: 600;
@@ -140,33 +141,49 @@
 }
 
 .img1 {
-    width: 250px;
+
+    position: relative;
+    width: 400px;
+    top: -50px;
 
     @media(max-width: 700px) {
-        width: 170px;
+        width: 300px;
+        top: -40px;
+
     }
 }
 
 .img2 {
-    max-width: 400px !important;
+
+    width: 500px;
+    position: relative;
+    top: -100px;
 
     @media(max-width: 700px) {
-        max-width: 300px !important;
+        width: 350px;
+        top: -80px;
     }
 }
 
 .img3 {
-    max-width: 250px;
+    position: relative;
+    top: -60px;
+    width: 430px;
 
     @media(max-width: 700px) {
-        max-width: 200px;
+        width: 320px;
+        top: -60px;
     }
 }
 
 .img4 {
-    max-width: 300px;
+
+    width: 460px;
+    top: -70px;
+    position: relative;
 
     @media(max-width: 700px) {
-        max-width: 240px;
+        width: 320px;
+        top: -60px;
     }
 }
