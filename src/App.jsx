@@ -57,7 +57,7 @@ function App() {
       <Header showContent={showContent} />
       <Hero showContent={showContent} setshowContent={setshowContent} />
       <HeroText setactiveBlock={setactiveBlock} />
-      <Partners />
+      {/* <Partners /> */}
       <About setactiveBlock={setactiveBlock} />
       <Gallery setactiveBlock={setactiveBlock} />
       <Footer setactiveBlock={setactiveBlock} />
