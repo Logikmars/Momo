@@ -7,23 +7,23 @@ export default () => {
     const listItem = [
         {
             img: '/img/bear1.webp',
-            title: 'Buy $MOMO',
-            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+            title: 'Download Phantom',
+            description: `Get your eyes off the screen and go check what's going outside, chill w friends, live.`
         },
         {
             img: '/img/bear2.webp',
-            title: 'Buy $MOMO',
-            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+            title: 'Get some SOL',
+            description: `Well if you are still with us touchgrasser, then let's proceed.`
         },
         {
             img: '/img/bear3.webp',
-            title: 'Buy $MOMO',
-            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+            title: 'Go to raydium.io',
+            description: `Now that you have some Solana, head to Raydium.io (or Jup.ag if you prefer) to be able to swap your $SOL for some $MOMO.`
         },
         {
             img: '/img/bear4.webp',
             title: 'Buy $MOMO',
-            description: 'Download Phantom or your wallet of choice from the store. Desktop users, download the Google Chrome extension by going to Phantom'
+            description: `Paste the token address (CA) into Raydium and switch SOL for $PNUT. There's zero taxes so you don't need to worry.`
         }
     ];
 

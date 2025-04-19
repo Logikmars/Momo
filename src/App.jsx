@@ -4,16 +4,17 @@ import Gallery from "./components/Gallery/Gallery"
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
 import Partners from "./components/Partners/Partners"
+import Tokenomics from "./components/Tokenomics/Tokenomics"
 
+import { useEffect, useState } from "react"
+import HeroText from "./components/HeroText/HeroText"
+import Nav from "./components/Nav/Nav"
 
 
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { useEffect, useState } from "react"
-import HeroText from "./components/HeroText/HeroText"
-import Nav from "./components/Nav/Nav"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
@@ -59,6 +60,7 @@ function App() {
       <HeroText setactiveBlock={setactiveBlock} />
       {/* <Partners /> */}
       <About setactiveBlock={setactiveBlock} />
+      <Tokenomics setactiveBlock={setactiveBlock} />
       <Gallery setactiveBlock={setactiveBlock} />
       <Footer setactiveBlock={setactiveBlock} />
     </div>

@@ -8,7 +8,7 @@ export default ({ setactiveBlock }) => {
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
-                setactiveBlock(4)
+                setactiveBlock(5)
             },
             { threshold: 0.1 }
         );

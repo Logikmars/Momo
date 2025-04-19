@@ -25,6 +25,7 @@ export default ({ setactiveBlock }) => {
         };
     }, []);
 
+
     return (
         <div>
             <div className='About' >

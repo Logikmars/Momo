@@ -5,6 +5,7 @@ export default ({ activeTab, secactiveTab, theactiveTab }) => {
     const btns = [
         { text: "ABOUT" },
         { text: "HOW TO BUY" },
+        { text: "TOKENOMICS" },
         { text: "GALLERY" },
         { text: "SOCIALS" }
     ];

@@ -18,7 +18,7 @@ export default ({ index, title, description, currentSlide }) => {
                     </div>
                     <div className='AboutSliderItem__title free_img'>
                         <div className='AboutSliderItem__title_index'>{index}</div>
-                        <div className='AboutSliderItem__title_title '>{title}</div>
+                        <div className={`AboutSliderItem__title_title  AboutSliderItem__title_title_${index}`}>{title}</div>
                     </div>
                 </div>
                 <div className='AboutSliderItem__description'>

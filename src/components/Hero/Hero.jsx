@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import './Hero.scss';
+
+const dev = import.meta.env.VITE_DEV || false
+
 export default ({ setshowContent, showContent }) => {
 
     const videoRef = useRef(null);
@@ -45,7 +48,9 @@ export default ({ setshowContent, showContent }) => {
                         transition: `opacity 500ms`,
                     }}
                     onLoadedMetadata={(e) => {
-                        // e.currentTarget.playbackRate = 10;
+                        if (dev) {
+                            e.currentTarget.playbackRate = 10;
+                        }
                     }}
                 />
             </div>
