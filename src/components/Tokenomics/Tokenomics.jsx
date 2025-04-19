@@ -141,7 +141,7 @@ export default ({ setactiveBlock }) => {
             scrollTrigger: {
                 trigger: '.Tokenomics',
                 scrub: 3,
-                markers: true,
+                // markers: true,
                 start: '49% 90%',
                 end: '50% 90%',
             }
