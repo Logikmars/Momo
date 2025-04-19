@@ -21,7 +21,7 @@ export default ({ setactiveBlock }) => {
                     scrub: (index + 1),
                     // markers: true,
                     start: `top 90%`,
-                    end: `bottom 90%`,
+                    end: `50% 90%`,
                 }
             })
         }
@@ -40,7 +40,7 @@ export default ({ setactiveBlock }) => {
                 scrub: 5,
                 // markers: true,
                 start: 'top 90%',
-                end: 'bottom 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_bonePart_1`, {
@@ -58,7 +58,7 @@ export default ({ setactiveBlock }) => {
                 scrub: 3,
                 // markers: true,
                 start: 'top 90%',
-                end: 'bottom 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_bonePart_2`, {
@@ -76,7 +76,7 @@ export default ({ setactiveBlock }) => {
                 scrub: 3,
                 // markers: true,
                 start: 'top 90%',
-                end: 'bottom 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_bonePart_3`, {
@@ -94,7 +94,7 @@ export default ({ setactiveBlock }) => {
                 scrub: 4,
                 // markers: true,
                 start: 'top 90%',
-                end: 'bottom 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_char`, {
@@ -108,8 +108,8 @@ export default ({ setactiveBlock }) => {
                 trigger: '.Tokenomics',
                 scrub: 2,
                 // markers: true,
-                start: '50% 90%',
-                end: 'bottom 90%',
+                start: '30% 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_boneLeft`, {
@@ -125,8 +125,8 @@ export default ({ setactiveBlock }) => {
                 trigger: '.Tokenomics',
                 scrub: 2,
                 // markers: true,
-                start: '70% 90%',
-                end: 'bottom 90%',
+                start: '40% 90%',
+                end: '50% 90%',
             }
         })
         gsap.fromTo(`.Tokenomics_boneRight`, {
@@ -141,9 +141,9 @@ export default ({ setactiveBlock }) => {
             scrollTrigger: {
                 trigger: '.Tokenomics',
                 scrub: 3,
-                // markers: true,
-                start: '90% 90%',
-                end: 'bottom 90%',
+                markers: true,
+                start: '49% 90%',
+                end: '50% 90%',
             }
         })
     }, { scope: scope })
