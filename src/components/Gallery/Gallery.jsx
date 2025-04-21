@@ -9,27 +9,27 @@ export default ({ setactiveBlock }) => {
 
 
 
-    const obs = useRef(null)
+    // const obs = useRef(null)
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setactiveBlock(4)
-            },
-            { threshold: 0.1 }
-        );
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             setactiveBlock(4)
+    //         },
+    //         { threshold: 0.1 }
+    //     );
 
-        if (obs.current) observer.observe(obs.current);
+    //     if (obs.current) observer.observe(obs.current);
 
-        return () => {
-            if (obs.current) observer.unobserve(obs.current);
-        };
-    }, []);
+    //     return () => {
+    //         if (obs.current) observer.unobserve(obs.current);
+    //     };
+    // }, []);
 
 
     return (
         <>
-            <div ref={obs}></div>
+            {/* <div ref={obs}></div> */}
             <div className='Gallery' id='GALLERY' >
                 {/* <div className='Gallery__nav'>
                     <Nav theactiveTab={3} />

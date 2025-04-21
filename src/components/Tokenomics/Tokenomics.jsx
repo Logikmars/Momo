@@ -18,7 +18,7 @@ export default ({ setactiveBlock }) => {
                 ease: 'none',
                 scrollTrigger: {
                     trigger: '.Tokenomics',
-                    scrub: (index + 1),
+                    scrub: 3,
                     // markers: true,
                     start: `top 90%`,
                     end: `50% 90%`,
@@ -37,7 +37,7 @@ export default ({ setactiveBlock }) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Tokenomics',
-                scrub: 5,
+                scrub: 1,
                 // markers: true,
                 start: 'top 90%',
                 end: '50% 90%',
@@ -55,7 +55,7 @@ export default ({ setactiveBlock }) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Tokenomics',
-                scrub: 3,
+                scrub: 2,
                 // markers: true,
                 start: 'top 90%',
                 end: '50% 90%',
@@ -73,7 +73,7 @@ export default ({ setactiveBlock }) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Tokenomics',
-                scrub: 3,
+                scrub: 1,
                 // markers: true,
                 start: 'top 90%',
                 end: '50% 90%',
@@ -91,7 +91,7 @@ export default ({ setactiveBlock }) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Tokenomics',
-                scrub: 4,
+                scrub: 2,
                 // markers: true,
                 start: 'top 90%',
                 end: '50% 90%',
@@ -123,7 +123,7 @@ export default ({ setactiveBlock }) => {
             ease: 'none',
             scrollTrigger: {
                 trigger: '.Tokenomics',
-                scrub: 2,
+                scrub: 3,
                 // markers: true,
                 start: '40% 90%',
                 end: '50% 90%',
@@ -150,7 +150,7 @@ export default ({ setactiveBlock }) => {
 
 
     return (
-        <div className='Tokenomics_wrapper' ref={scope}>
+        <div className='Tokenomics_wrapper' ref={scope} id='TOKENOMICS'>
             <div className='Tokenomics' >
                 <div className={`Tokenomics_boneLeft free_img`}>
                     <img src={`/img/tokenomics/resized_boneLeft.webp`} alt="" />

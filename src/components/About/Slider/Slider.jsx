@@ -7,13 +7,13 @@ export default () => {
     const listItem = [
         {
             img: '/img/bear1.webp',
-            title: 'Download Phantom',
-            description: `Get your eyes off the screen and go check what's going outside, chill w friends, live.`
+            title: `Wait, this ain't grass`,
+            description: `Get your eyes off the screen. Go outside. Call your mom. This page was not meant to be found.`
         },
         {
             img: '/img/bear2.webp',
-            title: 'Get some SOL',
-            description: `Well if you are still with us touchgrasser, then let's proceed.`
+            title: 'Still here?',
+            description: `Alright grass-toucher. Guess it's time to teach you how to buy $MOMO. Don't say we didn't warn you and prepare the SOL.`
         },
         {
             img: '/img/bear3.webp',
@@ -23,7 +23,7 @@ export default () => {
         {
             img: '/img/bear4.webp',
             title: 'Buy $MOMO',
-            description: `Paste the token address (CA) into Raydium and switch SOL for $PNUT. There's zero taxes so you don't need to worry.`
+            description: `And that's how you ended up holding 8 figures of $MOMO. Congrats.`
         }
     ];
 
@@ -55,7 +55,7 @@ export default () => {
     }, { scope: scope })
 
     return (
-        <div ref={scope}>
+        <div ref={scope} className='Slider'>
             <div className='About__slider_wrapper' id='HOW_TO_BUY'>
                 <div className='About__slider'>
                     {listItem.map((el, index) => (

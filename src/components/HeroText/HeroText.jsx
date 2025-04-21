@@ -31,27 +31,27 @@ export default ({ setactiveBlock }) => {
 
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setactiveBlock(1)
-            },
-            { threshold: 0.1 }
-        );
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             setactiveBlock(1)
+    //         },
+    //         { threshold: 0.1 }
+    //     );
 
-        if (obs.current) observer.observe(obs.current);
+    //     if (obs.current) observer.observe(obs.current);
 
-        return () => {
-            if (obs.current) observer.unobserve(obs.current);
-        };
-    }, []);
+    //     return () => {
+    //         if (obs.current) observer.unobserve(obs.current);
+    //     };
+    // }, []);
 
-    const obs = useRef(null)
+    // const obs = useRef(null)
 
 
     return (
-        <div ref={scope}>
-            <div ref={obs}></div>
+        <div ref={scope} className="HeroText" id="Hero">
+            {/* <div ref={obs}></div> */}
             <div className='Hero__title' id="ABOUT">
                 <div className='Hero__title_text'>
                     {
