@@ -126,7 +126,6 @@ function App() {
       <Hero showContent={showContent} setshowContent={setshowContent} />
       <HeroText setactiveBlock={setactiveBlock} />
       <About setactiveBlock={setactiveBlock} />
-      <Tokenomics setactiveBlock={setactiveBlock} />
       <Gallery setactiveBlock={setactiveBlock} />
       <Footer setactiveBlock={setactiveBlock} />
     </div>

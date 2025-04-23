@@ -7,24 +7,21 @@ export default ({ setactiveBlock }) => {
 
     const scope = useRef(null);
     useGSAP(() => {
-        for (let index = 0; index < 9; index++) {
-            gsap.fromTo(`.Tokenomics_bit_${index}`, {
-                y: `${index * 50}px`,
-                x: `${(index - 4) * 50}px`,
-
-            }, {
-                y: '0px',
-                x: `0px`,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: '.Tokenomics',
-                    scrub: 3,
-                    // markers: true,
-                    start: `top 90%`,
-                    end: `50% 90%`,
-                }
-            })
-        }
+        gsap.fromTo(`.Tokenomics_bits`, {
+            y: `300px`,
+            x: `500px`,
+        }, {
+            y: '0px',
+            x: `0px`,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.Tokenomics',
+                scrub: 3,
+                // markers: true,
+                start: `top 90%`,
+                end: `50% 90%`,
+            }
+        })
         gsap.fromTo(`.Tokenomics_bonePart_0`, {
             rotate: `20deg`,
             y: `100px`,
@@ -161,13 +158,9 @@ export default ({ setactiveBlock }) => {
                 <div className={`Tokenomics_char free_img`}>
                     <img src={`/img/tokenomics/resized_char.webp`} alt="" />
                 </div>
-                {Array(9)
-                    .fill(0)
-                    .map((_, index) => {
-                        return <div className={`Tokenomics_bit_${index} free_img`} key={`Tokenomics_bit_${index}`}>
-                            <img src={`/img/tokenomics/resized_bit${index + 1}.webp`} alt="" />
-                        </div>
-                    })}
+                <div className={`Tokenomics_bits free_img`} >
+                    <img src={`/img/tokenomics/resized_bits.webp`} alt="" />
+                </div>
                 {Array(4)
                     .fill(0)
                     .map((_, index) => {

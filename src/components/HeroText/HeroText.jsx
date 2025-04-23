@@ -22,31 +22,14 @@ export default ({ setactiveBlock }) => {
             scrollTrigger: {
                 // markers: true,
                 trigger: '.Hero__title_text',
+                start: "0% 60%",
+                end: '100% 60%',
             },
-            onComplete: () => {
+            onUpdate: () => {
                 setshowText(true)
             }
         })
     }, { scope: scope })
-
-
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => {
-    //             setactiveBlock(1)
-    //         },
-    //         { threshold: 0.1 }
-    //     );
-
-    //     if (obs.current) observer.observe(obs.current);
-
-    //     return () => {
-    //         if (obs.current) observer.unobserve(obs.current);
-    //     };
-    // }, []);
-
-    // const obs = useRef(null)
 
 
     return (
