@@ -8,7 +8,7 @@ export default ({ showContent }) => {
         }}>
             <div className='container'>
                 <div className='Header__logo'>
-                    <img src="/img/lg.svg" alt="" />
+                    <img src="/img/GROF.webp" alt="" />
                 </div>
 
                 <div className='Header__social'>

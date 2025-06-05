@@ -13,17 +13,17 @@ export default () => {
         {
             img: '/img/bear2.webp',
             title: 'Still here?',
-            description: `Alright grass-toucher. Guess it's time to teach you how to buy $MOMO. Don't say we didn't warn you and prepare the SOL.`
+            description: `Alright grass-toucher. Guess it's time to teach you how to buy $GROF. Don't say we didn't warn you and prepare the SOL.`
         },
         {
             img: '/img/bear3.webp',
             title: 'Go to raydium.io',
-            description: `Now that you have some Solana, head to Raydium.io (or Jup.ag if you prefer) to be able to swap your $SOL for some $MOMO.`
+            description: `Now that you have some Solana, head to Raydium.io (or Jup.ag if you prefer) to be able to swap your $SOL for some $GROF.`
         },
         {
             img: '/img/bear4.webp',
-            title: 'Buy $MOMO',
-            description: `And that's how you ended up holding 8 figures of $MOMO. Congrats.`
+            title: 'Buy $GROF',
+            description: `And that's how you ended up holding 8 figures of $GROF. Congrats.`
         }
     ];
 

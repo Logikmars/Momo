@@ -24,6 +24,10 @@
 
         max-height: 50px;
 
+        img {
+            max-width: 150px;
+        }
+
         @media(max-width: 500px) {
             img {
                 max-width: 120px;
