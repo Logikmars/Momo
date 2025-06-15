@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     document.body.style.overflow = showContent ? '' : 'hidden';
-    document.body.style.position = showContent ? '' : 'fixed';
+    // document.body.style.position = showContent ? '' : 'fixed';
     return () => {
       document.body.style.overflow = '';
     };
@@ -74,7 +74,7 @@ function App() {
         trigger: ".Tokenomics_wrapper",
         start: "0% 100%",
         end: '100% 100%',
-        markers: true,
+        // markers: true,
         onUpdate: () => {
           console.log('enter to 3');
           setactiveBlock(3)
@@ -98,7 +98,7 @@ function App() {
         trigger: ".Footer",
         start: "0% 100%",
         end: '0% 100%',
-        markers: true,
+        // markers: true,
         onUpdate: () => {
           console.log('enter to 4');
           setactiveBlock(4)
