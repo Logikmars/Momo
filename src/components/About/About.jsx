@@ -14,7 +14,7 @@ export default ({ setactiveBlock }) => {
         <div className='About' >
             <div className='About_content'>
                 <div className='About__paper'>
-                    <img src="/img/paper.webp" alt="" />
+                    <img src="/img/paperPawse.webp" alt="" />
                 </div>
                 <Slider />
             </div>

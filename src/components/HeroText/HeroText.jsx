@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 export default ({ setactiveBlock }) => {
 
     const dogsInText = {
-        3: 1,
-        17: 2,
-        32: 3,
-        46: 4,
+        4: 1,
+        145: 2,
+        109: 3,
+        96: 4,
         55: 5,
     }
 
@@ -45,7 +45,7 @@ export default ({ setactiveBlock }) => {
                                     !!dogsInText[index] && <div className='free_img Hero__title_text_img'>
                                         <img src={`/img/dogs/hero_text_dog_${dogsInText[index]}.webp`} alt=""
                                             style={{
-                                                transition: `opacity 200ms ${(index * 30) + 1000}ms`,
+                                                transition: `opacity 200ms ${(index * 3) + 1000}ms`,
                                                 // opacity: showContent ? 1 : 0
                                                 opacity: showText ? 1 : 0
                                             }} />
@@ -53,7 +53,7 @@ export default ({ setactiveBlock }) => {
                                 }
                                 <span
                                     style={{
-                                        transition: `opacity 200ms ${index * 30}ms`,
+                                        transition: `opacity 200ms ${index * 3}ms`,
                                         opacity: showText ? 1 : 0
                                     }}
                                 >{letter}</span>
