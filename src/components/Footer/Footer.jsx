@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import './Footer.scss';
+import MediaLinks from '../MediaLinks/MediaLinks';
 export default ({ setactiveBlock }) => {
 
     // const obs = useRef(null)
@@ -20,11 +21,7 @@ export default ({ setactiveBlock }) => {
     return (
         <div className='Footer' id='SOCIALS'>
             {/* <div ref={obs}></div> */}
-            <div className='Footer__links'>
-                <a className='Footer__links_item' href='#'>X / TWITTER</a>
-                <a className='Footer__links_item' href='#'>TELEGRAM</a>
-                <a className='Footer__links_item' href='#'>DEXSCREENER</a>
-            </div>
+            <MediaLinks large />
         </div>
     )
 }

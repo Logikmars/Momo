@@ -1,5 +1,7 @@
-import Nav from '../Nav/Nav';
 import './Header.scss';
+
+import MediaLinks from "../MediaLinks/MediaLinks";
+
 export default ({ showContent }) => {
     return (
         <div className='Header' style={{
@@ -8,20 +10,10 @@ export default ({ showContent }) => {
         }}>
             <div className='container'>
                 <div className='Header__logo'>
-                    <img src="/img/GROF.webp" alt="" />
+                    <img src="/img/PAWSE.webp" alt="" />
                 </div>
 
-                <div className='Header__social'>
-                    <a href="#">
-                        <img src="/img/x.png" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="/img/tg.png" alt="" />
-                    </a>
-                    <a href="#">
-                        <img src="/img/dex.png" alt="" />
-                    </a>
-                </div>
+                <MediaLinks />
             </div>
         </div>
     )

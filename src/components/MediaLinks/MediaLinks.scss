@@ -1,0 +1,41 @@
+    .MediaLinks {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            cursor: pointer;
+            transition: transform 300ms;
+            will-change: transform;
+
+            &:hover {
+                transform: scale(1.1) !important;
+            }
+        }
+
+        img {
+            width: 35px;
+            cursor: pointer;
+            max-width: 50px;
+
+            @media(max-width: 500px) {
+                max-width: 20px;
+            }
+        }
+
+
+        &_large {
+            gap: 45px;
+
+            img {
+                width: 70px;
+                cursor: pointer;
+                max-width: 50px;
+
+                @media(max-width: 500px) {
+                    max-width: 50px;
+                }
+            }
+        }
+    }

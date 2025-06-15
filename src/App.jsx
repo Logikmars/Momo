@@ -72,36 +72,36 @@ function App() {
     gsap.to(".Tokenomics_wrapper", {
       scrollTrigger: {
         trigger: ".Tokenomics_wrapper",
-        start: "0% 0%",
+        start: "0% 100%",
         end: '100% 100%',
-        // markers: true,
+        markers: true,
         onUpdate: () => {
           console.log('enter to 3');
           setactiveBlock(3)
         },
       }
     });
-    gsap.to(".Gallery", {
-      scrollTrigger: {
-        trigger: ".Gallery",
-        start: "0% 0%",
-        end: '100% 100%',
-        // markers: true,
-        onUpdate: () => {
-          console.log('enter to 4');
-          setactiveBlock(4)
-        },
-      }
-    });
+    // gsap.to(".Gallery", {
+    //   scrollTrigger: {
+    //     trigger: ".Gallery",
+    //     start: "0% 0%",
+    //     end: '100% 100%',
+    //     // markers: true,
+    //     onUpdate: () => {
+    //       console.log('enter to 4');
+    //       setactiveBlock(4)
+    //     },
+    //   }
+    // });
     gsap.to(".Footer", {
       scrollTrigger: {
         trigger: ".Footer",
         start: "0% 100%",
         end: '0% 100%',
-        // markers: true,
+        markers: true,
         onUpdate: () => {
-          console.log('enter to 5');
-          setactiveBlock(5)
+          console.log('enter to 4');
+          setactiveBlock(4)
         },
       }
     });
@@ -126,7 +126,7 @@ function App() {
       <Hero showContent={showContent} setshowContent={setshowContent} />
       <HeroText setactiveBlock={setactiveBlock} />
       <About setactiveBlock={setactiveBlock} />
-      <Gallery setactiveBlock={setactiveBlock} />
+      {/* <Gallery setactiveBlock={setactiveBlock} /> */}
       <Footer setactiveBlock={setactiveBlock} />
     </div>
   )

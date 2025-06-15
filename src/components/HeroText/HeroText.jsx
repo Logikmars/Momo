@@ -38,7 +38,8 @@ export default ({ setactiveBlock }) => {
             <div className='Hero__title' id="ABOUT">
                 <div className='Hero__title_text'>
                     {
-                        `Escape The Feed Shit the dog who on a true digital detox`.split('').map((letter, index) => {
+
+                        `A gentle, cozy feeling that's like a snuggly blanket wrapped around your soul. To Pawse is to melt into a state of pure chill where everything is soft and easy.`.split('').map((letter, index) => {
                             return <>
                                 {
                                     !!dogsInText[index] && <div className='free_img Hero__title_text_img'>

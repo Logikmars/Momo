@@ -217,7 +217,7 @@ export default ({ setactiveBlock }) => {
                 <div className={`Tokenomics_bits free_img`} >
                     <img src={`/img/tokenomics/resized_bits.webp`} alt="" />
                 </div>
-                {Array(7)
+                {Array(6)
                     .fill(0)
                     .map((_, index) => {
                         return <div className={`Tokenomics_bonePart_${index} free_img`} key={`Tokenomics_bonePart_${index}`}>
