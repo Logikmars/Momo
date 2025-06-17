@@ -47,7 +47,7 @@ export default ({ setshowContent, showContent }) => {
                     }}
                     onLoadedMetadata={(e) => {
                         // if (import.meta.env.VITE_DEV) {
-                        // e.currentTarget.playbackRate = 10;
+                        e.currentTarget.playbackRate = 10;
                         // }
                     }}
                 />

@@ -42,6 +42,7 @@ export default () => {
                     // markers: true,
                     pin: '.About__slider',
                     pinSpacing: false,
+                    anticipatePin: 2, // <-- это ключ
                     start: 'top 0%',
                     end: 'bottom 100%',
                     onUpdate: self => {
