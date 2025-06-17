@@ -17,8 +17,8 @@ export default () => {
         },
         {
             img: '/img/bear3.webp',
-            title: 'Go to raydium.io',
-            description: `Now that you have some Solana, head to Raydium.io (or Jup.ag if you prefer) to be able to swap your $SOL for some $PAWSE.`
+            title: 'Go to app.bullpen.fi',
+            description: `Now that you have some Solana, head to app.bullpen.fi to be able to swap your $SOL for some $PAWSE.`
         },
         {
             img: '/img/bear4.webp',
