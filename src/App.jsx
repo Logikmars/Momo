@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer"
 import Gallery from "./components/Gallery/Gallery"
 import Header from "./components/Header/Header"
 import Hero from "./components/Hero/Hero"
+import HeroMob from "./components/Hero/HeroMob"
 import Partners from "./components/Partners/Partners"
 import Tokenomics from "./components/Tokenomics/Tokenomics"
 
@@ -107,6 +108,9 @@ function App() {
     });
   }, { scope: scope })
 
+
+
+
   return (
     <div className='App' style={{
       width: `100%`,
@@ -123,7 +127,11 @@ function App() {
         <Nav activeTab={activeBlock} />
       </div>
       <Header showContent={showContent} />
-      <Hero showContent={showContent} setshowContent={setshowContent} />
+      {
+        window.innerWidth > window.innerHeight
+          ? <Hero showContent={showContent} setshowContent={setshowContent} />
+          : <HeroMob showContent={showContent} setshowContent={setshowContent} />
+      }
       <HeroText setactiveBlock={setactiveBlock} />
       <About setactiveBlock={setactiveBlock} />
       {/* <Gallery setactiveBlock={setactiveBlock} /> */}
